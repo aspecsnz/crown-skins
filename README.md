@@ -40,4 +40,4 @@ Items are priced using the BitSkins Market.  The lowest listing on the bitskins 
 # How do I get paid?
 
 You can view all your transactions on the crown skins website.
-Once a client accepts the trade, the items are sent directly to the Trade URL in the ``config.js`` file
+Once a client accepts the trade, the transaction gets listed in the withdrawals page.  You can withdraw 10 transactions at a time due to Steam trade size limits.
