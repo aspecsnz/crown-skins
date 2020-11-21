@@ -26,11 +26,7 @@ module.exports = {
         Auth: {
             Username: "",
             Password: ""
-        },
-        
-        // Account Payout Skins will be sent to once the transaction has successfully been processed.
-
-        PayoutTradeURL: ""
+        }
     },
     Webserver: {
         // Port this intergration app listens to
