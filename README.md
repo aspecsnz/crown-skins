@@ -35,7 +35,7 @@ You can now accept payments for Skins under your Tebex Store.
 
 # How are items priced?
 
-Items are priced using the BitSkins Market.  The lowest listing on the bitskins market or the steam market price, whichever is lower.
+Item are by default priced by the Steam Market price.  You can % discount the items by changing the 'item_price_multiplier' in the config, and you can define custom prices via the Crown Skins Panel.
 
 # How do I get paid?
 

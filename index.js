@@ -25,7 +25,7 @@ app.get('/', async (req, res) =>
 
     if (!can_proceed)
     {
-        return res.redirect(config.Tebex.ErrorRedirect);
+        return res.redirect(config.Tebex.error_redirect);
     }
 
     let skins_data = await Skins.payments.ensure(reference, payment);
@@ -55,12 +55,12 @@ app.get('/return', async (req, res) =>
 
     if (!req.query.auto)
     {
-        return res.redirect(config.Tebex.CompleteRedirect.replace("{REFERENCE}", transaction_id));
+        return res.redirect(config.Tebex.complete_redirect.replace("{REFERENCE}", transaction_id));
     }
         
     return res.sendStatus(200);
 })
 
-app.get('/cancel', (req, res) => res.redirect(config.Tebex.ErrorRedirect));
+app.get('/cancel', (req, res) => res.redirect(config.Tebex.error_redirect));
 
-server.listen(config.Webserver.Port, () => console.log(`[Express] Listening on port ${config.Webserver.Port}.`));
+server.listen(config.Webserver.port, () => console.log(`[Express] Listening on port ${config.Webserver.port}.`));
